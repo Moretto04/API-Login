@@ -1,5 +1,4 @@
-import os
 # config.py
-SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:LeDaSiyWdDlzDkhEhWDNwoDSOwuAudjO@centerbeam.proxy.rlwy.net:47834/railway'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
