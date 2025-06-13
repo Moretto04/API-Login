@@ -77,6 +77,10 @@ def deletar_usuario(id):
     db.session.commit()
     return '', 204
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({"mensagem": "API Login rodando!"})
+
 if __name__ == '__main__':
     import os
     port = int(os.environ.get("PORT", 5000))
